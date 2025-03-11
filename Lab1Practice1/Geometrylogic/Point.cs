@@ -1,4 +1,6 @@
-﻿namespace Geometry;
+﻿using Geometry;
+
+namespace Geometry;
 
 public class Point : IMoveable
 {
