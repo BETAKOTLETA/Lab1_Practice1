@@ -131,8 +131,6 @@ namespace Automotive.Tests
         [InlineData(100, 100)]
         [InlineData(500, 400)]
 
-        // TODO: Create a Date class to interpret the trip odometer.
-
         public void DailyOdometer_should_return_proper_value(int distance, int expected)
         {
             var Testcar = new Car("Toyota", 200, 50);
