@@ -16,15 +16,20 @@ namespace Geometry.Tests
 
             
         }
-        [Fact]
-        public void Point_can_be_created_with_one_input()
+
+        [Theory]
+        [InlineData(2, 2)]
+        [InlineData(5, 5)]
+        [InlineData(-3, -3)]
+
+        public void Point_can_be_created_with_one_input(double x, double expected)
         {
-            var Testpoint = new Point(2);
+            var Testpoint = new Point(x);
 
             Testpoint.Should().BeOfType<Point>();
 
-            Testpoint.X.Should().Be(2);
-            Testpoint.Y.Should().Be(2);
+            Testpoint.X.Should().Be(expected);
+            Testpoint.Y.Should().Be(expected);
 
 
         }
