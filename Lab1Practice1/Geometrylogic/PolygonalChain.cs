@@ -8,6 +8,8 @@ public class PolygonalChain : Segment, IMoveable
 
     public void AddMidpoint(Point midpoint) => _midpoints.Add(midpoint);
 
+    public List<Point> Midpoints() => _midpoints;
+
     public override double Length
     {
         get

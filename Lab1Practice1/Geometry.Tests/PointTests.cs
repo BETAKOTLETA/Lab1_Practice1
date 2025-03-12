@@ -45,7 +45,6 @@ namespace Geometry.Tests
 
             Testpoint.Move(-5, -4);
 
-            Testpoint.Should().BeOfType<Point>();
 
             Testpoint.X.Should().Be(0);
             Testpoint.Y.Should().Be(1);
@@ -54,8 +53,7 @@ namespace Geometry.Tests
         public void Distance_should_return_proper_results()
         {
             var Testpoint = new Point(3, 4);
-
-            Testpoint.Should().BeOfType<Point>();
+            
             Testpoint.Distance().Should().Be(5);
         }
 

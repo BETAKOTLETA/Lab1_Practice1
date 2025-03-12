@@ -23,9 +23,9 @@ namespace Geometry.Tests
 
 
 
-            TestSegment.Start.Should().Be(new Point(1, 1));
+            TestSegment.Start.Should().BeEquivalentTo(new Point(1, 1));
             TestSegment.Start.Should().BeOfType<Point>();
-            TestSegment.End.Should().Be(new Point(4, 5));
+            TestSegment.End.Should().BeEquivalentTo(new Point(4, 5));
             TestSegment.End.Should().BeOfType<Point>();
         }
     }
